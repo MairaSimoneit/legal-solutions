@@ -1,922 +1,1535 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Legal Trámites</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link
+            href="//fonts.googleapis.com/css?family=Arimo:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <link rel="stylesheet" href="css/ie/v9.css" />
+        <script src="js/script.js"></script>
+    </head>
 
-<head>
-	<title>Legal Trámites</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-	<link href="//fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-panels.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel-noscript.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style-desktop.css">
-	</noscript>
-	<link rel="stylesheet" href="css/ie/v9.css" />
-	<script src="js/script.js"></script>
-</head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <div id="logo">
+                    <h1><a href="#">TRÁMITES</a></h1>
+                    <span>Por Legal Solutions</span>
+                </div>
 
-<body>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/">Principal</a></li>
+                        <li class="active">
+                            <a href="left-sidebar.html">Trámites</a>
+                        </li>
+                        <li>
+                            <a href="accidentes-laborales.html"
+                                >Accidentes Laborales</a
+                            >
+                        </li>
+                        <li><a href="right-sidebar.html">Leyes</a></li>
+                        <li><a href="no-sidebar.html">Útiles</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div id="sidebar" class="4u">
+                        <section>
+                            <header>
+                                <h2>Elegí el trámite de interés</h2>
+                            </header>
+                            <ul class="style">
+                                <li
+                                    onclick="mostrarContenido('alta-monotributo')"
+                                >
+                                    <p class="posted">Alta de Monotributo</p>
+                                    <p class="text">
+                                        Este trámite permite que te registres
+                                        como trabajador independiente para
+                                        emitir facturas y pagar impuestos.
+                                    </p>
+                                </li>
+                                <li onclick="mostrarContenido('carta-poder')">
+                                    <p class="posted">Carta Poder Simple</p>
+                                    <p class="text">
+                                        Documento que autoriza a otra persona a
+                                        hacer un trámite específico en tu nombre
+                                        (por ejemplo: retirar una encomienda o
+                                        cobrar un pago).
+                                    </p>
+                                </li>
+                                <li
+                                    onclick="mostrarContenido('certificado-convivencia')"
+                                >
+                                    <p class="posted">
+                                        Certificado de Convivencia
+                                    </p>
+                                    <p class="text">
+                                        Documento que acredita que dos personas
+                                        viven juntas como pareja o familia.
+                                    </p>
+                                </li>
+                                <li
+                                    onclick="mostrarContenido('inicio-sucesion')"
+                                >
+                                    <p class="posted">Inicio de Sucesión</p>
+                                    <p class="text">
+                                        Proceso judicial para repartir los
+                                        bienes de una persona fallecida entre
+                                        sus herederos legales.
+                                    </p>
+                                </li>
+                                <li onclick="mostrarContenido('extravio-dni')">
+                                    <p class="posted">
+                                        Denuncia de Extravío de DNI
+                                    </p>
+                                    <p class="text">
+                                        Permite dejar constancia oficial de que
+                                        perdiste tu DNI.
+                                    </p>
+                                </li>
+                                <li
+                                    onclick="mostrarContenido('cambio-domicilio')"
+                                >
+                                    <p class="posted">Cambio de Domicilio</p>
+                                    <p class="text">
+                                        Actualiza la dirección donde vivís en tu
+                                        DNI.
+                                    </p>
+                                </li>
+                                <li onclick="mostrarContenido('viaje-menores')">
+                                    <p class="posted">
+                                        Autorización para Viajar con Menores
+                                    </p>
+                                    <p class="text">
+                                        Documento que permite que un menor viaje
+                                        solo o con uno solo de sus padres.
+                                    </p>
+                                </li>
+                                <li onclick="mostrarContenido('divorcio')">
+                                    <p class="posted">
+                                        Divorcio por Mutuo Acuerdo
+                                    </p>
+                                    <p class="text">
+                                        Permite disolver legalmente el
+                                        matrimonio de común acuerdo entre las
+                                        partes.
+                                    </p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
 
-	<div id="header">
-		<div class="container">
+                    <div id="content" class="8u skel-cell-important">
+                        <section id="tramite-principal">
+                            <header>
+                                <h2>Área de Trámites</h2>
+                            </header>
+                            <p>
+                                En esta sección vas a encontrar información
+                                clara, actualizada y detallada sobre diversos
+                                trámites legales y administrativos en Argentina.
+                                Cada guía está pensada para ayudarte a entender
+                                qué necesitas, cómo hacerlo paso a paso, y qué
+                                tener en cuenta según tu situación.
+                            </p>
+                            <h3>Incluimos:</h3>
+                            <ul>
+                                <li>Requisitos y documentación</li>
+                                <li>Instrucciones paso a paso</li>
+                                <li>Costos y plazos estimados</li>
+                                <li>Enlaces oficiales y recomendaciones</li>
+                            </ul>
+                        </section>
+                        <section class="destacados">
+                            <p>
+                                Importante: Esta web tiene un fin informativo y
+                                orientativo. No reemplaza el asesoramiento
+                                profesional de un/a abogado/a, contador/a u
+                                otro/a especialista. Siempre recomendamos
+                                consultar con un/a profesional para resolver
+                                casos particulares o dudas específicas.
+                            </p>
+                        </section>
+                        <div id="alta-monotributo" class="tramites oculto">
+                            <section>
+                                <h1>Alta de Monotributo</h1>
+                            </section>
+                            <section>
+                                <h3>¿Qué es el Monotributo?</h3>
+                                <p>
+                                    El Monotributo es un régimen simplificado de
+                                    AFIP para pequeños contribuyentes que
+                                    unifica:
+                                </p>
+                                <ul>
+                                    <li>
+                                        El pago de impuestos (IVA y Ganancias)
+                                    </li>
+                                    <li>La obra social</li>
+                                    <li>El aporte jubilatorio</li>
+                                    <li>
+                                        Sirve para formalizar actividades
+                                        económicas (venta de productos o
+                                        prestación de servicios) de forma
+                                        simple.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>¿Quiénes pueden darse de alta?</h3>
+                                <p>Pueden inscribirse:</p>
+                                <ul>
+                                    <li>
+                                        Personas físicas con actividad
+                                        independiente (ej. emprendedores,
+                                        freelancers, oficios).
+                                    </li>
+                                    <li>
+                                        Integrantes de cooperativas de trabajo.
+                                    </li>
+                                    <li>
+                                        No superar los topes anuales de
+                                        facturación (actualizados en AFIP).
+                                    </li>
+                                </ul>
+                                <span class="byline"
+                                    >No pueden: quienes tengan participación en
+                                    sociedades, presten servicios al Estado con
+                                    relación de dependencia, ni quienes superen
+                                    los límites del régimen.</span
+                                >
+                            </section>
+                            <section>
+                                <h3>Requisitos para inscribirse:</h3>
+                                <ul>
+                                    <li>
+                                        CUIT (Clave Única de Identificación
+                                        Tributaria)
+                                    </li>
+                                    <li>Clave Fiscal nivel 2 o superior</li>
+                                    <li>Domicilio fiscal electrónico</li>
+                                    <li>
+                                        Datos actualizados en el sistema
+                                        registral AFIP
+                                    </li>
+                                    <li>
+                                        Contar con actividad económica
+                                        registrada (ej. "Servicios de
+                                        programación informática")
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>¿Cómo darse de alta en el Monotributo?</h3>
+                                <p>Paso a paso:</p>
+                                <ul>
+                                    <li>
+                                        Ingresar a la web de AFIP
+                                        www.afip.gob.ar con CUIT y clave fiscal
+                                    </li>
+                                    <li>
+                                        Seleccionar “Monotributo” En el menú de
+                                        servicios, buscar y hacer clic en
+                                        "Monotributo"
+                                    </li>
+                                    <li>
+                                        Elegir “Adhesión al Monotributo”
+                                        Confirmar datos personales y domicilio
+                                        fiscal
+                                    </li>
+                                    <li>
+                                        Seleccionar actividad económica Se usa
+                                        el nomenclador de actividades de AFIP
+                                        (puede usarse buscador por palabra
+                                        clave)
+                                    </li>
+                                    <li>
+                                        Ingresar ingresos estimados Esto define
+                                        tu categoría (de la A a la K). La más
+                                        baja es A, la más alta es K.
+                                    </li>
+                                    <li>
+                                        Elegir obra social (opcional) Podés
+                                        sumar aportes a una obra social, elegir
+                                        una específica o adherir a una prepaga
+                                        por fuera
+                                    </li>
+                                    <li>
+                                        Confirmar y generar constancia de alta
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Categorías y montos</h2>
+                                <p>Se categorizan según:</p>
+                                <ul>
+                                    <li>Facturación anual</li>
+                                    <li>Superficie afectada</li>
+                                    <li>Consumo de energía eléctrica</li>
+                                    <li>Alquileres devengados</li>
+                                    <li>Precio unitario (si vendés bienes)</li>
+                                </ul>
+                                <span class="byline">
+                                    Los valores se actualizan dos veces al año:
+                                    enero y julio (ver web de AFIP o escalas
+                                    vigentes en tu app).</span
+                                >
+                            </section>
+                            <section>
+                                <h2>¿Qué impuestos paga un monotributista?</h2>
+                                <p>
+                                    Cada mes se paga una cuota fija, que
+                                    incluye:
+                                </p>
+                                <p>
+                                    Concepto ¿Qué cubre? Impositivo IVA +
+                                    Ganancias Previsional Aporte jubilatorio
+                                    (SIPA) Obra Social Cobertura médica básica
+                                </p>
+                                <span class="byline"
+                                    >En las categorías más bajas (ej. A), podés
+                                    pagar menos si estás en zonas vulnerables o
+                                    tenés beneficios.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>Cuándo y cómo se paga</h2>
+                                <ul>
+                                    <li>Vencimiento: el 20 de cada mes</li>
+                                    <li>
+                                        Formas de pago: débito automático, home
+                                        banking, billeteras virtuales (Mercado
+                                        Pago, etc.), cajeros.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Qué constancias se obtienen?</h2>
+                                <ul>
+                                    <li>Constancia de inscripción</li>
+                                    <li>Recibos de pago mensual</li>
+                                    <li>Facturas electrónicas</li>
+                                </ul>
+                            </section>
+                            <section class="destacados">
+                                <h2>Consejos y datos útiles</h2>
+                                <ul>
+                                    <li>
+                                        Recategorizarse cada 6 meses (enero y
+                                        julio).
+                                    </li>
+                                    <li>
+                                        Emitir facturas electrónicas (tipo C)
+                                        obligatoriamente.
+                                    </li>
+                                    <li>
+                                        Llevar control de ingresos y egresos
+                                        para no excederse.
+                                    </li>
+                                    <li>
+                                        Si dejás de cumplir requisitos, pasás al
+                                        régimen general.
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
 
-			<div id="logo">
-				<h1><a href="#">TRÁMITES</a></h1>
-				<span>Por Legal Solutions</span>
-			</div>
+                        <div id="carta-poder" class="tramites oculto">
+                            <section>
+                                <h1>Carta de Poder Simple</h1>
+                            </section>
+                            <section>
+                                <h3>¿Qué es una Carta de Poder Simple?</h3>
+                                <p>
+                                    La Carta Poder Simple es un documento
+                                    privado mediante el cual una persona (el
+                                    otorgante) autoriza a otra (el apoderado)
+                                    para realizar gestiones o trámites
+                                    específicos en su nombre. No requiere
+                                    certificación por escribano ni intervención
+                                    judicial. Se utiliza para trámites simples y
+                                    cotidianos.
+                                </p>
+                            </section>
+                            <section>
+                                <h3>¿Para qué sirve?</h3>
+                                <p>
+                                    Se usa para autorizar a alguien a realizar,
+                                    por ejemplo:
+                                </p>
+                                <ul>
+                                    <li>Retiro de documentación</li>
+                                    <li>Entrega o recepción de papeles</li>
+                                    <li>
+                                        Trámites en bancos, ANSES, obras
+                                        sociales, registros civiles, etc.
+                                    </li>
+                                    <li>
+                                        Datos actualizados en el sistema
+                                        registral AFIP
+                                    </li>
+                                    <li>
+                                        Presentación de documentación en
+                                        organismos públicos o privados
+                                    </li>
+                                </ul>
+                                <span class="byline"
+                                    >No es válida para actos que requieren
+                                    escritura pública, como vender inmuebles o
+                                    firmar contratos notariales (para eso se
+                                    necesita un poder ante escribano).</span
+                                >
+                            </section>
+                            <section>
+                                <h2>
+                                    ¿Qué debe contener una Carta Poder Simple?
+                                </h2>
+                                <p>1. Datos del otorgante</p>
+                                <ul>
+                                    <li>Nombre completo</li>
+                                    <li>DNI</li>
+                                    <li>Domicilio</li>
+                                </ul>
+                                <p>
+                                    2. Datos del apoderado (quien va a realizar
+                                    el trámite):
+                                </p>
+                                <ul>
+                                    <li>Nombre completo</li>
+                                    <li>DNI</li>
+                                    <li>Domicilio</li>
+                                </ul>
+                                <p>3. Descripción clara del poder otorgado:</p>
+                                <ul>
+                                    <li>
+                                        Especificar el trámite o gestiones
+                                        autorizadas
+                                    </li>
+                                    <li>
+                                        Lugar y entidad donde se hará el trámite
+                                    </li>
+                                </ul>
+                                <p>4. Fecha y lugar de emisión</p>
+                                <p>
+                                    5. Firma del otorgante (y del apoderado si
+                                    se desea)
+                                </p>
+                                <span class="byline"
+                                    >En algunos casos, la entidad que recibe el
+                                    trámite puede solicitar:</span
+                                >
+                                <ul>
+                                    <li>Copia de DNI de ambos</li>
+                                    <li>Firma con aclaración</li>
+                                    <li>
+                                        Que la carta tenga una certificación de
+                                        firma (por banco, juzgado de paz,
+                                        escribano, etc.)
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>¿Hay un formato oficial?</h3>
+                                <p>
+                                    No. Al ser un documento privado, no existe
+                                    un modelo único u oficial. Sin embargo, debe
+                                    ser claro, preciso y contener todos los
+                                    datos necesarios.
+                                </p>
+                                <span class="byline"
+                                    >Las cartas manuscritas o impresas son
+                                    válidas si están completas y firmadas.</span
+                                >
+                            </section>
+                            <section>
+                                <h3>Recomendaciones importantes</h3>
+                                <ul>
+                                    <li>
+                                        Siempre indicar exactamente qué trámite
+                                        se autoriza.
+                                    </li>
+                                    <li>Usar un lenguaje formal y claro.</li>
+                                    <li>
+                                        En lo posible, acompañar con fotocopias
+                                        de DNI.
+                                    </li>
+                                    <li>
+                                        Verificar si la entidad receptora tiene
+                                        requisitos específicos (algunos
+                                        organismos tienen formularios propios o
+                                        exigen certificación de firma).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Modelo descargable</h3>
+                                <p>
+                                    Podés descargar un modelo editable de Carta
+                                    Poder Simple para completarlo con tus datos:
+                                </p>
+                                <a
+                                    href="documentos-pdf/Modelo_Carta_Poder_Simple.pdf"
+                                    download
+                                    class="boton-descarga"
+                                >
+                                    Descargar Modelo en PDF
+                                </a>
+                            </section>
+                        </div>
 
+                        <div
+                            id="certificado-convivencia"
+                            class="tramites oculto"
+                        >
+                            <section>
+                                <h1>Certificado de Convivencia</h1>
+                            </section>
+                            <section>
+                                <h3>¿Qué es el Certificado de Convivencia?</h3>
+                                <p>
+                                    El Certificado de Convivencia es un
+                                    documento que acredita que dos personas
+                                    viven juntas bajo el mismo techo, ya sea
+                                    como pareja (unión de hecho) o como
+                                    convivientes (familiares, amigos, etc.).<br />
+                                    Se utiliza para fines legales,
+                                    administrativos, previsionales o sanitarios.
+                                </p>
+                            </section>
+                            <section>
+                                <h2>¿Para qué sirve?</h2>
+                                <p>Es requerido comúnmente para:</p>
+                                <ul>
+                                    <li>
+                                        Afiliaciones a obras sociales o prepagas
+                                    </li>
+                                    <li>Cobertura médica familiar</li>
+                                    <li>
+                                        Trámites de ANSES (Asignaciones, AUH,
+                                        pensiones, etc.)
+                                    </li>
+                                    <li>
+                                        Certificados de residencia o escolaridad
+                                    </li>
+                                    <li>
+                                        Uniones convivenciales (cuando se
+                                        necesita demostrar convivencia previa)
+                                    </li>
+                                    <li>Trámites migratorios</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Dónde se tramita?</h2>
+                                <p>
+                                    Se puede gestionar de dos formas, según el
+                                    caso:
+                                </p>
+                                <h3>
+                                    1. Ante el Registro Civil o Juzgado de Paz
+                                </h3>
+                                <p>
+                                    Ideal para certificar parejas en unión
+                                    convivencial (relación afectiva). En este
+                                    caso, algunas provincias lo gestionan como
+                                    un "Acta de Convivencia" o incluso como paso
+                                    previo a la unión convivencial.
+                                </p>
+                                <h3>
+                                    2. Ante una Comisaría o Centro Municipal /
+                                    Comunal
+                                </h3>
+                                <p>
+                                    Para situaciones más simples o urgentes, se
+                                    puede solicitar un Certificado de
+                                    Convivencia policial, que tiene validez para
+                                    trámites menores (obras sociales, becas,
+                                    etc.). En general:
+                                </p>
+                                <ul>
+                                    <li>Lo otorgan con testigos</li>
+                                    <li>
+                                        Tiene una validez limitada (ej: 30 o 90
+                                        días)
+                                    </li>
+                                    <li>Es gratuito o con costo mínimo</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Requisitos generales</h2>
+                                <p>
+                                    Los requisitos pueden variar según la
+                                    provincia o municipio, pero en general se
+                                    solicita:
+                                </p>
+                                <h3>Documentación personal:</h3>
+                                <p>DNI original y copia de ambas personas</p>
+                                <p>
+                                    Comprobante de domicilio (boleta de servicio
+                                    o contrato de alquiler a nombre de alguno de
+                                    los dos)
+                                </p>
+                                <h3>Testigos:</h3>
+                                <p>
+                                    En algunos casos, se requiere la presencia
+                                    de dos testigos (vecinos, familiares) con
+                                    DNI
+                                </p>
+                                <p>
+                                    Deben declarar que los convivientes
+                                    efectivamente comparten domicilio
+                                </p>
+                                <h3>Tiempo mínimo de convivencia:</h3>
+                                <p>
+                                    Algunas entidades exigen mínimo 2 años de
+                                    convivencia si el certificado será usado
+                                    para trámites legales más formales (como
+                                    previsionales)
+                                </p>
+                            </section>
+                            <section>
+                                <h2>Consideraciones legales</h2>
+                                <ul>
+                                    <li>
+                                        No es lo mismo que una Unión
+                                        Convivencial registrada ante el Registro
+                                        Civil, aunque puede ser un paso previo
+                                        para iniciarla.
+                                    </li>
+                                    <li>
+                                        Tiene valor declarativo, no
+                                        constitutivo. Es decir, acredita una
+                                        situación de hecho.
+                                    </li>
+                                    <li>
+                                        Puede ser usado como prueba
+                                        complementaria ante ANSES, obras
+                                        sociales, juzgados, etc.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Modelo orientativo del contenido</h2>
+                                <p>
+                                    Un certificado de convivencia suele incluir:
+                                </p>
+                                <span class="byline"
+                                    >"Se deja constancia que las personas
+                                    [NOMBRE 1], DNI [] y [NOMBRE 2], DNI [],
+                                    manifiestan convivir en el domicilio sito en
+                                    [DIRECCIÓN COMPLETA], desde hace
+                                    aproximadamente [TIEMPO] meses/años,
+                                    constituyendo un grupo conviviente. Dicha
+                                    información ha sido corroborada por testigos
+                                    presentes."</span
+                                >
+                            </section>
+                        </div>
 
-			<nav id="nav">
-				<ul>
-					<li><a href="/">Principal</a></li>
-					<li class="active"><a href="left-sidebar.html">Trámites</a></li>
-					<li><a href="right-sidebar.html">Leyes</a></li>
-					<li><a href="no-sidebar.html">Útiles</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+                        <div id="inicio-sucesion" class="tramites oculto">
+                            <section>
+                                <h1>Inicio de Sucesión</h1>
+                            </section>
+                            <section>
+                                <h3>¿Qué es una Sucesión?</h3>
+                                <p>
+                                    La sucesión es el proceso judicial mediante
+                                    el cual se transfiere el patrimonio (bienes,
+                                    derechos y deudas) de una persona fallecida
+                                    a sus herederos legales o testamentarios. El
+                                    inicio de sucesión es el primer paso legal
+                                    para gestionar esa herencia.s.
+                                </p>
+                            </section>
+                            <section>
+                                <h2>
+                                    ¿Cuándo es necesario iniciar una sucesión?
+                                </h2>
+                                <p>Se debe iniciar una sucesión cuando:</p>
+                                <ul>
+                                    <li>
+                                        La persona fallecida tenía bienes
+                                        registrables: inmuebles, autos, cuentas
+                                        bancarias, etc.
+                                    </li>
+                                    <li>
+                                        Los herederos quieren vender,
+                                        transferir, alquilar o disponer
+                                        legalmente de esos bienes.
+                                    </li>
+                                    <li>
+                                        Se necesitan acreditar derechos ante
+                                        organismos públicos o privados (ej:
+                                        bancos, AFIP, Registro de la Propiedad).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Quiénes pueden iniciar el trámite?</h2>
+                                <p>
+                                    Cualquier heredero/a puede iniciar la
+                                    sucesión. Los herederos pueden ser:
+                                </p>
+                                <ul>
+                                    <li>Hijos/as</li>
+                                    <li>Cónyuge supérstite (viudo/a)</li>
+                                    <li>Padres</li>
+                                    <li>Nietos (si los hijos fallecieron)</li>
+                                    <li>
+                                        Hermanos u otros parientes colaterales
+                                        (si no hay descendencia directa)
+                                    </li>
+                                </ul>
+                                <span class="byline"
+                                    >También puede hacerlo el albacea o un
+                                    acreedor, si hay intereses
+                                    comprometidos.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>Tipos de sucesión</h2>
+                                <h3>1. Sucesión ab intestato</h3>
+                                <p>
+                                    Cuando no hay testamento. Se aplica el orden
+                                    legal de herederos establecido por el Código
+                                    Civil y Comercial.
+                                </p>
+                                <h3>2. Sucesión testamentaria</h3>
+                                <p>
+                                    Cuando hay testamento válido. Se ejecuta la
+                                    voluntad del fallecido según lo establecido
+                                    en el testamento.
+                                </p>
+                            </section>
+                            <section>
+                                <h2>
+                                    Documentación necesaria para iniciar una
+                                    sucesión
+                                </h2>
+                                <p>
+                                    El abogado o abogada que la tramite
+                                    solicitará:
+                                </p>
+                                <ul>
+                                    <li>Partida de defunción del causante</li>
+                                    <li>
+                                        Partida de nacimiento, matrimonio o
+                                        prueba de vínculo de los herederos
+                                    </li>
+                                    <li>Testamento (si existiera)</li>
+                                    <li>
+                                        Título de propiedad de los bienes
+                                        (inmuebles, automotores, etc.)
+                                    </li>
+                                    <li>CUIL/CUIT del causante y herederos</li>
+                                    <li>
+                                        Declaración jurada de bienes (si
+                                        corresponde)
+                                    </li>
+                                    <li>DNI de los herederos</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Dónde se inicia el trámite?</h2>
+                                <p>
+                                    La sucesión se inicia ante el juzgado civil
+                                    correspondiente al último domicilio del
+                                    fallecido.<br />
+                                    El trámite siempre se realiza con patrocinio
+                                    letrado obligatorio (abogado/a).
+                                </p>
+                            </section>
+                            <section>
+                                <h2>¿Cómo es el proceso?</h2>
+                                <p>Etapas comunes:</p>
+                                <ul>
+                                    <li>
+                                        1- Presentación de la demanda por parte
+                                        del abogado/a.
+                                    </li>
+                                    <li>
+                                        2- Declaratoria de herederos (si no hay
+                                        testamento) o validez del testamento.
+                                    </li>
+                                    <li>
+                                        3- Informes registrales (para verificar
+                                        bienes a nombre del fallecido).
+                                    </li>
+                                    <li>
+                                        4- Partición de bienes (si hay más de un
+                                        heredero).
+                                    </li>
+                                    <li>
+                                        5- Inscripción en registros públicos
+                                        (ej: Registro de la Propiedad,
+                                        automotor, etc.).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Cuánto tarda?</h2>
+                                <p>
+                                    Depende de cada juzgado y del tipo de
+                                    bienes. En promedio:
+                                </p>
+                                <ul>
+                                    <li>Sucesiones simples: 4 a 9 meses</li>
+                                    <li>
+                                        Sucesiones complejas o con conflictos: 1
+                                        año o más
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Cuánto cuesta?</h2>
+                                <p>Costos aproximados:</p>
+                                <ul>
+                                    <li>
+                                        Honorarios de abogado/a: suelen ser un
+                                        porcentaje del valor del patrimonio
+                                        hereditario (5% al 15%).
+                                    </li>
+                                    <li>
+                                        Tasa de justicia: 1,5% del valor de los
+                                        bienes (al presentar la demanda).
+                                    </li>
+                                    <li>
+                                        Gastos administrativos: informes
+                                        registrales, certificados,
+                                        publicaciones, etc.
+                                    </li>
+                                </ul>
+                                <span class="byline"
+                                    >Se puede pactar con el profesional el pago
+                                    con bienes heredados o en cuotas.</span
+                                >
+                            </section>
+                        </div>
 
+                        <div id="extravio-dni" class="tramites oculto">
+                            <section>
+                                <h1>Denuncia por Extravío del DNI</h1>
+                            </section>
+                            <section>
+                                <p>
+                                    Perder el DNI puede generarte muchas
+                                    preocupaciones, pero hacer la denuncia por
+                                    extravío es un paso rápido y necesario para
+                                    evitar usos indebidos y poder gestionar un
+                                    nuevo documento. Te explicamos todo lo que
+                                    necesitás saber.
+                                </p>
+                            </section>
+                            <section>
+                                <h2>¿Qué es una denuncia por extravío?</h2>
+                                <p>
+                                    Es una declaración oficial que se realiza
+                                    cuando una persona pierde su DNI y necesita
+                                    dejar constancia de la pérdida. Sirve para:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Proteger tu identidad en caso de que
+                                        alguien use el DNI perdido de forma
+                                        fraudulenta.
+                                    </li>
+                                    <li>
+                                        Iniciar el trámite para solicitar un
+                                        nuevo ejemplar.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Dónde se hace la denuncia?</h2>
+                                <p>
+                                    Podés hacer la denuncia en cualquiera de los
+                                    siguientes lugares:
+                                </p>
+                                <h3>1. Comisaría</h3>
+                                <ul>
+                                    <li>
+                                        Acercate a la comisaría más cercana y
+                                        explicá que perdiste tu DNI.
+                                    </li>
+                                    <li>
+                                        Te tomarán una declaración y te darán
+                                        una constancia de extravío.
+                                    </li>
+                                </ul>
+                                <h3>2. Online (en algunas provincias)</h3>
+                                <ul>
+                                    <li>
+                                        Algunas provincias permiten hacer la
+                                        denuncia a través de sus portales web
+                                        oficiales o apps.
+                                    </li>
+                                    <li>
+                                        Consultá el sitio web del Ministerio de
+                                        Seguridad o Policía de tu provincia.
+                                    </li>
+                                </ul>
+                                <h3>
+                                    3. Registro Civil (al iniciar el trámite de
+                                    nuevo DNI)
+                                </h3>
+                                <p>
+                                    No siempre es obligatorio presentar la
+                                    denuncia policial. Si solo querés reimprimir
+                                    el DNI, muchas veces basta con acudir
+                                    directamente al Registro Civil o hacer el
+                                    trámite online (ver más abajo).
+                                </p>
+                            </section>
+                            <section>
+                                <h2>¿Qué necesito para hacer la denuncia?</h2>
+                                <ul>
+                                    <li>Tu número de DNI (si lo recordás).</li>
+                                    <li>
+                                        Datos personales: nombre completo,
+                                        domicilio, fecha y lugar de nacimiento.
+                                    </li>
+                                    <li>
+                                        Lugar y fecha aproximada en que ocurrió
+                                        la pérdida.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>
+                                    ¿Cómo tramitar un nuevo DNI tras la pérdida?
+                                </h2>
+                                <p>
+                                    Una vez hecha la denuncia, podés solicitar
+                                    un nuevo ejemplar de tu DNI. Se puede hacer:
+                                </p>
+                                <h3>Online (Reimpresión)</h3>
+                                <ul>
+                                    <li>Desde Mi Argentina o RENAPER.</li>
+                                    <li>
+                                        Solo si tenés una cuenta y datos
+                                        validados.
+                                    </li>
+                                </ul>
+                                <h3>Presencial</h3>
+                                <ul>
+                                    <li>
+                                        En el Registro Civil, Centros de
+                                        Documentación o unidades del RENAPER.
+                                    </li>
+                                    <li>
+                                        Se te tomará una foto, firma y huellas
+                                        digitales.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Tiene costo?</h2>
+                                <p>
+                                    Sí, la reimpresión del DNI tiene un costo
+                                    aproximado de $3000 a $4000 (pesos
+                                    argentinos), dependiendo del trámite y la
+                                    modalidad (express, común o urgente).
+                                </p>
+                            </section>
+                            <section>
+                                <h2>¿Cuánto tarda?</h2>
+                                <ul>
+                                    <li>
+                                        Trámite común: entre 10 y 15 días
+                                        hábiles.
+                                    </li>
+                                    <li>
+                                        Trámite exprés: 24 a 96 horas (tiene un
+                                        costo adicional).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Qué hacer si alguien encuentra tu DNI?</h2>
+                                <p>
+                                    Podés avisar a la comisaría o devolverlo al
+                                    Registro Civil más cercano. También podés
+                                    intentar ubicar al titular si aparece en
+                                    redes sociales o grupos locales.
+                                </p>
+                            </section>
+                        </div>
 
-	<div id="main">
-		<div class="container">
-			<div class="row">
+                        <div id="cambio-domicilio" class="tramites oculto">
+                            <section>
+                                <h1>Cambio de Domicilio</h1>
+                            </section>
+                            <section>
+                                <h2>
+                                    ¿Por qué es importante actualizar el
+                                    domicilio?
+                                </h2>
+                                <p>
+                                    Actualizar tu domicilio en el DNI es
+                                    esencial para:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Mantener tus datos personales
+                                        actualizados.
+                                    </li>
+                                    <li>
+                                        Asegurar tu correcta inclusión en el
+                                        padrón electoral.
+                                    </li>
+                                    <li>
+                                        Evitar inconvenientes en trámites
+                                        oficiales.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>¿Cómo realizar el trámite?</h2>
+                                <h3>1. Presencial en Argentina</h3>
+                                <ul>
+                                    <li>
+                                        ¿Dónde? En el Registro Civil
+                                        correspondiente a tu nuevo domicilio o
+                                        en un Centro de Documentación del
+                                        RENAPER.
+                                    </li>
+                                    <li>
+                                        Requisitos: <br />
+                                        DNI vigente. <br />
+                                        Si sos menor de 14 años, partida de
+                                        nacimiento original y acompañamiento de
+                                        padre, madre o tutor con DNI.
+                                    </li>
+                                    <li>Costo: $7.500 (trámite regular).</li>
+                                    <li>
+                                        Duración del trámite: Aproximadamente 15
+                                        minutos.
+                                    </li>
+                                    <li>
+                                        Entrega del nuevo DNI: <br />
+                                        - Trámite regular: entre 10 y 15 días
+                                        hábiles. <br />
+                                        - Trámite exprés: entre 48 y 96 horas
+                                        hábiles, con un costo de $18.500.
+                                    </li>
+                                </ul>
+                                <h3>
+                                    2. En la Ciudad Autónoma de Buenos Aires
+                                    (CABA)
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Requisitos adicionales: <br />
+                                        Tener usuario y clave miBA nivel 2 o 3.
+                                    </li>
+                                    <li>
+                                        Procedimiento: <br />
+                                        - Reservar turno a través de la
+                                        plataforma miBA. <br />
+                                        - Presentarse en la oficina
+                                        correspondiente con la documentación
+                                        requerida.
+                                    </li>
+                                </ul>
+                                <h3>3. Para Argentinos en el Exterio</h3>
+                                <ul>
+                                    <li>
+                                        ¿Dónde? En el Consulado Argentino
+                                        correspondiente a tu lugar de
+                                        residencia.
+                                    </li>
+                                    <li>
+                                        Requisitos: <br />
+                                        - DNI vigente. <br />
+                                        - En algunos casos, dos fotos carnet 4x4
+                                        con fondo blanco.
+                                    </li>
+                                    <li>
+                                        Costo: 15 Unidades Consulares (el valor
+                                        puede variar según el consulado).
+                                    </li>
+                                    <li>
+                                        Procedimiento: <br />
+                                        - Solicitar turno en el consulado.
+                                        <br />
+                                        - Presentarse con la documentación
+                                        requerida. <br />
+                                        - El nuevo DNI se retira en el consulado
+                                        una vez emitido.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Información adicional</h3>
+                                <ul>
+                                    <li>
+                                        Vigencia del nuevo DNI: 15 años para
+                                        mayores de 14 años.
+                                    </li>
+                                    <li>
+                                        Seguimiento del trámite: Podés realizar
+                                        el seguimiento online con tu ID de
+                                        trámite.
+                                    </li>
+                                    <li>
+                                        Entrega del DNI: El nuevo DNI se entrega
+                                        en el domicilio declarado o se retira en
+                                        la oficina donde se realizó el trámite,
+                                        según corresponda.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="enlaces-utiles">
+                                <h2>
+                                    Enlaces útiles para cambio de domicilio en
+                                    el DNI
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/servicio/tramitar-un-nuevo-ejemplar-de-dni"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Trámite de nuevo ejemplar de DNI -
+                                            Argentina.gob.ar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://buenosaires.gob.ar/tramites/dni-cambio-de-domicilio"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Cambio de domicilio en DNI -
+                                            Gobierno de la Ciudad
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/tramitar-cambio-de-domicilio-en-el-dni-para-argentinos-en-el-exterior"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Cambio de domicilio en el exterior -
+                                            Argentina.gob.ar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
 
+                        <div id="viaje-menores" class="tramites oculto">
+                            <section>
+                                <h1>Autorización para Viajar con Menores</h1>
+                            </section>
+                            <section>
+                                <h2>
+                                    ¿Quiénes necesitan autorización para viajar?
+                                </h2>
+                                <p>
+                                    En Argentina, los menores de 18 años
+                                    requieren autorización para salir del país
+                                    en las siguientes situaciones:
+                                </p>
+                                <ul>
+                                    <li>Viajan solos.</li>
+                                    <li>
+                                        Viajan acompañados por un solo
+                                        progenitor.
+                                    </li>
+                                    <li>
+                                        Viajan con terceros (familiares o no).
+                                    </li>
+                                </ul>
+                                <span
+                                    >Excepciones: Si el menor viaja con ambos
+                                    progenitores y se presenta documentación que
+                                    acredite el vínculo (como partida de
+                                    nacimiento o libreta de familia), no es
+                                    necesaria una autorización adicional.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>Tipos de autorización</h2>
+                                <h3>
+                                    1. Autorización digital (nueva modalidad
+                                    2025):
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Trámite presencial en sedes del RENAPER.
+                                    </li>
+                                    <li>
+                                        Válida hasta que el menor cumpla 18 años
+                                        o hasta el vencimiento del pasaporte, lo
+                                        que ocurra primero.
+                                    </li>
+                                    <li>
+                                        Permite al menor viajar solo a cualquier
+                                        país.
+                                    </li>
+                                    <li>
+                                        El proceso incluye verificación
+                                        biométrica y registro digital, con
+                                        notificación automática a Migraciones.
+                                    </li>
+                                    <li>
+                                        Puede ser revocada en cualquier momento
+                                        por cualquiera de los progenitores.
+                                    </li>
+                                </ul>
+                                <h3>2. Autorización tradicional:</h3>
+                                <ul>
+                                    <li>
+                                        Otorgada ante escribano público, juez
+                                        competente o cónsul argentino en el
+                                        exterior.
+                                    </li>
+                                    <li>
+                                        Puede ser por única vez, por un período
+                                        determinado o hasta la mayoría de edad.
+                                    </li>
+                                    <li>
+                                        Requiere legalización o apostilla, según
+                                        corresponda.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Documentación requerida</h2>
+                                <h3>Para el menor:</h3>
+                                <ul>
+                                    <li>DNI o pasaporte vigente.</li>
+                                    <li>
+                                        Partida de nacimiento o libreta de
+                                        familia que acredite el vínculo con los
+                                        progenitores.
+                                    </li>
+                                </ul>
+                                <h3>Para los progenitores o tutores:</h3>
+                                <ul>
+                                    <li>DNI vigente.</li>
+                                    <li>
+                                        En caso de tutores, resolución judicial
+                                        que acredite la tutela.
+                                    </li>
+                                </ul>
+                                <h3>
+                                    Si uno de los progenitores ha fallecido:
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Certificado de defunción
+                                        correspondiente.
+                                    </li>
+                                </ul>
+                                <h3>Si el menor viaja con un tercero:</h3>
+                                <ul>
+                                    <li>DNI del acompañante.</li>
+                                    <li>
+                                        Autorización firmada por ambos
+                                        progenitores o tutores.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Costos y tiempos de tramitación</h2>
+                                <ul>
+                                    <li>
+                                        Trámite normal: $10.000 – entrega en 10
+                                        días hábiles.
+                                    </li>
+                                    <li>
+                                        Trámite exprés: $20.000 – entrega en 48
+                                        horas hábiles.
+                                    </li>
+                                    <li>
+                                        Trámite al instante: $30.000 – entrega
+                                        en 2 horas.
+                                    </li>
+                                </ul>
+                                <span
+                                    >Estos trámites pueden realizarse sin turno
+                                    en la Sede Central de Migraciones,
+                                    delegaciones en todo el país y pasos
+                                    fronterizos.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>¿Dónde realizar el trámite?</h2>
+                                <h3>En Argentina:</h3>
+                                <ul>
+                                    <li>Sedes del RENAPER.</li>
+                                    <li>
+                                        Delegaciones de la Dirección Nacional de
+                                        Migraciones.
+                                    </li>
+                                    <li>Escribanos públicos.</li>
+                                    <li>Juzgados competentes.</li>
+                                </ul>
+                                <h3>En el exterior:</h3>
+                                <ul>
+                                    <li>Consulados argentinos.</li>
+                                    <li>
+                                        Notarios públicos (con apostilla o
+                                        legalización correspondiente).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="enlaces-utiles">
+                                <h2>Enlaces útiles:</h2>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/servicio/autorizacion-de-viaje-para-menores-de-edad"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Autorización de viaje para menores
+                                            de edad
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/interior/migraciones/autorizacion-de-salida-del-pais-de-ninos-ninas-y-adolescentes/tipos-de"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Tipos de autorización de salida -
+                                            Migraciones
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://buenosaires.gob.ar/tramites/autorizacion-de-viaje-al-exterior-para-menores-de-18-anos"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Autorización de viaje al exterior
+                                            para menores de 18 años - Buenos
+                                            Aires Ciudad
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
 
-				<div id="sidebar" class="4u">
-					<section>
-						<header>
-							<h2>Elegí el trámite de interés</h2>
-						</header>
-						<ul class="style">
-							<li onclick="mostrarContenido('alta-monotributo')">
-								<p class="posted">Alta de Monotributo</p>
-								<img src="images/pic04.jpg" alt="" width="70" height="70">
-								<p class="text">Este trámite permite que te registres como trabajador independiente para
-									emitir
-									facturas y pagar impuestos.</p>
-							</li>
-							<li onclick="mostrarContenido('carta-poder')">
-								<p class="posted">Carta Poder Simple</p>
-								<img src="images/pic05.jpg" alt="" width="70" height="70">
-								<p class="text">Documento que autoriza a otra persona a hacer un trámite específico en
-									tu nombre (por ejemplo: retirar una encomienda o cobrar un pago).</p>
-							</li>
-							<li onclick="mostrarContenido('certificado-convivencia')">
-								<p class="posted">Certificado de Convivencia</p>
-								<img src="images/pic06.jpg" alt="" width="70" height="70">
-								<p class="text">Documento que acredita que dos personas viven juntas como pareja o
-									familia.</p>
-							</li>
-							<li onclick="mostrarContenido('inicio-sucesion')">
-								<p class="posted">Inicio de Sucesión</p>
-								<img src="images/pic05.jpg" alt="" width="70" height="70">
-								<p class="text">Proceso judicial para repartir los bienes de una persona fallecida entre
-									sus herederos legales.</p>
-							</li>
-							<li onclick="mostrarContenido('extravio-dni')">
-								<p class="posted">Denuncia de Extravío de DNI</p>
-								<img src="images/pic05.jpg" alt="" width="70" height="70">
-								<p class="text">Permite dejar constancia oficial de que perdiste tu DNI.</p>
-							</li>
-							<li onclick="mostrarContenido('cambio-domicilio')">
-								<p class="posted">Cambio de Domicilio</p>
-								<img src="images/pic06.jpg" alt="" width="70" height="70">
-								<p class="text">Actualiza la dirección donde vivís en tu DNI.</p>
-							</li>
-							<li onclick="mostrarContenido('viaje-menores')">
-								<p class="posted">Autorización para Viajar con Menores</p>
-								<img src="images/pic05.jpg" alt="" width="70" height="70">
-								<p class="text">Documento que permite que un menor viaje solo o con uno solo de sus
-									padres.</p>
-							</li>
-							<li onclick="mostrarContenido('divorcio')">
-								<p class="posted">Divorcio por Mutuo Acuerdo</p>
-								<img src="images/pic05.jpg" alt="" width="70" height="70">
-								<p class="text">Permite disolver legalmente el matrimonio de común acuerdo entre las
-									partes.</p>
-							</li>
-						</ul>
-					</section>
-				</div>
+                        <div id="divorcio" class="tramites oculto">
+                            <section>
+                                <h1>Divorcio por Mutuo Acuerdo en Argentina</h1>
+                            </section>
+                            <section>
+                                <h2>¿Qué es el divorcio por mutuo acuerdo?</h2>
+                                <p>
+                                    Es un proceso legal mediante el cual ambos
+                                    cónyuges deciden, de común acuerdo, disolver
+                                    su matrimonio. Desde la reforma del Código
+                                    Civil y Comercial en 2015, no es necesario
+                                    alegar una causa específica ni cumplir
+                                    plazos mínimos de matrimonio para solicitar
+                                    el divorcio.
+                                </p>
+                            </section>
+                            <section>
+                                <h2>Requisitos para iniciar el trámite</h2>
+                                <p>
+                                    Para solicitar el divorcio por mutuo
+                                    acuerdo, ambos cónyuges deben presentar ante
+                                    el juez una propuesta reguladora que
+                                    contemple:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Distribución de bienes: cómo se
+                                        dividirán los bienes adquiridos durante
+                                        el matrimonio.
+                                    </li>
+                                    <li>
+                                        Vivienda familiar: quién residirá en el
+                                        domicilio conyugal.
+                                    </li>
+                                    <li>
+                                        Compensaciones económicas: si
+                                        corresponde, para equilibrar
+                                        desequilibrios financieros entre las
+                                        partes.
+                                    </li>
+                                    <li>
+                                        Cuidado de los hijos menores: régimen de
+                                        convivencia, alimentos y educación.
+                                    </li>
+                                </ul>
+                                <span
+                                    >La omisión de esta propuesta impide dar
+                                    trámite a la petición de divorcio.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>Documentación necesaria</h2>
+                                <ul>
+                                    <li>DNI de ambos cónyuges.</li>
+                                    <li>Acta o partida de matrimonio.</li>
+                                    <li>
+                                        Partidas de nacimiento de los hijos
+                                        menores, si los hay.
+                                    </li>
+                                    <li>
+                                        Propuesta reguladora firmada por ambos.
+                                    </li>
+                                    <li>
+                                        Documentación que respalde los acuerdos
+                                        (escrituras, contratos, etc.).
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Procedimiento judicial</h2>
+                                <p>
+                                    1- Presentación de la demanda: ambos
+                                    cónyuges presentan la solicitud de divorcio
+                                    con la propuesta reguladora ante el juzgado
+                                    competente.
+                                </p>
+                                <p>
+                                    2- Revisión judicial: el juez evalúa la
+                                    propuesta y puede solicitar modificaciones
+                                    si considera que no protege adecuadamente
+                                    los derechos de alguna de las partes o de
+                                    los hijos menores.
+                                </p>
+                                <p>
+                                    3- Audiencia: en algunos casos, se convoca a
+                                    una audiencia para aclarar aspectos de la
+                                    propuesta.
+                                </p>
+                                <p>
+                                    4- Sentencia: si todo está en orden, el juez
+                                    dicta la sentencia de divorcio.
+                                </p>
+                                <span
+                                    >Estos trámites pueden realizarse sin turno
+                                    en la Sede Central de Migraciones,
+                                    delegaciones en todo el país y pasos
+                                    fronterizos.</span
+                                >
+                            </section>
+                            <section>
+                                <h2>Plazos y costos</h2>
+                                <ul>
+                                    <li>
+                                        Duración del trámite: varía según la
+                                        carga del juzgado, pero generalmente se
+                                        resuelve en un plazo de 1 a 3 meses.
+                                    </li>
+                                    <li>
+                                        Costos: pueden incluir honorarios de
+                                        abogados, tasas judiciales y gastos
+                                        administrativos. Es recomendable
+                                        consultar con un profesional para
+                                        obtener un presupuesto detallado.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Consideraciones sobre los hijos menores</h2>
+                                <p>
+                                    El juez priorizará el interés superior del
+                                    niño al evaluar los acuerdos sobre:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Responsabilidad parental: ambos padres
+                                        la mantienen, salvo decisión judicial en
+                                        contrario.
+                                    </li>
+                                    <li>
+                                        Régimen de cuidado: puede ser compartido
+                                        o unilateral, según lo acordado.
+                                    </li>
+                                    <li>
+                                        Régimen de comunicación: establece cómo
+                                        será la relación del niño con el
+                                        progenitor no conviviente.
+                                    </li>
+                                    <li>
+                                        Alimentos: se determina la contribución
+                                        económica de cada progenitor para el
+                                        sustento del menor.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="enlaces-utiles">
+                                <h2>Enlaces útiles:</h2>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/divorcio"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Divorcio - Ley Simple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/justicia/derechofacil/aplicalaley/nos-divorciamos"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Nos divorciamos - Justicia Cerca
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.argentina.gob.ar/normativa/nacional/ley-26994-235975/actualizacion"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Código Civil y Comercial de la
+                                            Nación
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
 
-
-				<div id="content" class="8u skel-cell-important">
-					<section id="tramite-principal">
-						<header>
-							<h2>Área de Trámites</h2>
-						</header>
-						<p>En esta sección vas a encontrar información clara, actualizada y detallada sobre diversos
-							trámites legales y administrativos en Argentina. Cada guía está pensada para ayudarte a
-							entender qué necesitas, cómo hacerlo paso a paso, y qué tener en cuenta según tu situación.
-						</p>
-						<h3>Incluimos:</h3>
-						<ul>
-							<li>Requisitos y documentación</li>
-							<li>Instrucciones paso a paso</li>
-							<li>Costos y plazos estimados</li>
-							<li>Enlaces oficiales y recomendaciones</li>
-						</ul>
-					</section>
-					<section class="destacados">
-						<p> Importante: Esta web tiene un fin informativo y orientativo. No reemplaza el asesoramiento
-							profesional de un/a abogado/a, contador/a u otro/a especialista. Siempre recomendamos
-							consultar con un/a profesional para resolver casos particulares o dudas específicas.</p>
-					</section>
-					<div id="alta-monotributo" class="tramites oculto">
-						<section>
-							<h1>Alta de Monotributo</h1>
-						</section>
-						<section>
-							<h3>¿Qué es el Monotributo?</h3>
-							<p>El Monotributo es un régimen simplificado de AFIP para pequeños contribuyentes que
-								unifica:
-							</p>
-							<ul>
-								<li>El pago de impuestos (IVA y Ganancias)</li>
-								<li>La obra social</li>
-								<li>El aporte jubilatorio</li>
-								<li>Sirve para formalizar actividades económicas (venta de productos o prestación de
-									servicios)
-									de forma simple.</li>
-							</ul>
-						</section>
-						<section>
-							<h3>¿Quiénes pueden darse de alta?</h3>
-							<p>Pueden inscribirse:</p>
-							<ul>
-								<li>Personas físicas con actividad independiente (ej. emprendedores, freelancers,
-									oficios).
-								</li>
-								<li>Integrantes de cooperativas de trabajo.
-								</li>
-								<li>No superar los topes anuales de facturación (actualizados en AFIP).</li>
-							</ul>
-							<span class="byline">No pueden: quienes tengan participación en sociedades, presten
-								servicios al Estado con
-								relación de dependencia, ni quienes superen los límites del régimen.</span>
-						</section>
-						<section>
-							<h3> Requisitos para inscribirse:</h3>
-							<ul>
-								<li>CUIT (Clave Única de Identificación Tributaria)</li>
-								<li>Clave Fiscal nivel 2 o superior</li>
-								<li>Domicilio fiscal electrónico</li>
-								<li>Datos actualizados en el sistema registral AFIP</li>
-								<li>Contar con actividad económica registrada (ej. "Servicios de programación
-									informática")
-								</li>
-							</ul>
-						</section>
-						<section>
-							<h3>¿Cómo darse de alta en el Monotributo?</h3>
-							<p>Paso a paso:</p>
-							<ul>
-								<li>Ingresar a la web de AFIP
-									www.afip.gob.ar con CUIT y clave fiscal</li>
-								<li>Seleccionar “Monotributo”
-									En el menú de servicios, buscar y hacer clic en "Monotributo"</li>
-								<li>Elegir “Adhesión al Monotributo”
-									Confirmar datos personales y domicilio fiscal</li>
-								<li>Seleccionar actividad económica
-									Se usa el nomenclador de actividades de AFIP (puede usarse buscador por palabra
-									clave)
-								</li>
-								<li>Ingresar ingresos estimados
-									Esto define tu categoría (de la A a la K). La más baja es A, la más alta es K.</li>
-								<li>Elegir obra social (opcional)
-									Podés sumar aportes a una obra social, elegir una específica o adherir a una prepaga
-									por
-									fuera</li>
-								<li>Confirmar y generar constancia de alta</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Categorías y montos</h2>
-							<p>Se categorizan según:</p>
-							<ul>
-								<li>Facturación anual</li>
-								<li>Superficie afectada</li>
-								<li>Consumo de energía eléctrica</li>
-								<li>Alquileres devengados</li>
-								<li>Precio unitario (si vendés bienes)</li>
-							</ul>
-							<span class="byline"> Los valores se actualizan dos veces al año: enero y julio (ver web de
-								AFIP
-								o escalas vigentes en tu app).</span>
-						</section>
-						<section>
-							<h2>¿Qué impuestos paga un monotributista?</h2>
-							<p>Cada mes se paga una cuota fija, que incluye:</p>
-							<p>Concepto ¿Qué cubre?
-								Impositivo IVA + Ganancias
-								Previsional Aporte jubilatorio (SIPA)
-								Obra Social Cobertura médica básica</p>
-							<span class="byline">En las categorías más bajas (ej. A), podés pagar menos si estás en
-								zonas
-								vulnerables o tenés beneficios.</span>
-						</section>
-						<section>
-							<h2>Cuándo y cómo se paga</h2>
-							<ul>
-								<li>Vencimiento: el 20 de cada mes</li>
-								<li>Formas de pago: débito automático, home banking, billeteras virtuales (Mercado Pago,
-									etc.), cajeros.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Qué constancias se obtienen?</h2>
-							<ul>
-								<li>Constancia de inscripción</li>
-								<li>Recibos de pago mensual</li>
-								<li>Facturas electrónicas</li>
-							</ul>
-						</section>
-						<section class="destacados">
-							<h2>Consejos y datos útiles</h2>
-							<ul>
-								<li>Recategorizarse cada 6 meses (enero y julio).</li>
-								<li>Emitir facturas electrónicas (tipo C) obligatoriamente.</li>
-								<li>Llevar control de ingresos y egresos para no excederse.</li>
-								<li>Si dejás de cumplir requisitos, pasás al régimen general.</li>
-							</ul>
-						</section>
-					</div>
-
-					<div id="carta-poder" class="tramites oculto">
-						<section>
-							<h1>Carta de Poder Simple</h1>
-						</section>
-						<section>
-							<h3>¿Qué es una Carta de Poder Simple?</h3>
-							<p>La Carta Poder Simple es un documento privado mediante el cual una persona (el otorgante)
-								autoriza a otra
-								(el apoderado) para realizar gestiones o trámites específicos en su nombre.
-								No requiere certificación por escribano ni intervención judicial. Se utiliza para
-								trámites
-								simples y
-								cotidianos.
-							</p>
-						</section>
-						<section>
-							<h3>¿Para qué sirve?</h3>
-							<p>Se usa para autorizar a alguien a realizar, por ejemplo:</p>
-							<ul>
-								<li>Retiro de documentación</li>
-								<li>Entrega o recepción de papeles</li>
-								<li>Trámites en bancos, ANSES, obras sociales, registros civiles, etc.</li>
-								<li>Datos actualizados en el sistema registral AFIP</li>
-								<li>Presentación de documentación en organismos públicos o privados</li>
-							</ul>
-							<span class="byline">No es válida para actos que requieren escritura pública, como vender
-								inmuebles o firmar
-								contratos notariales (para eso se necesita un poder ante escribano).</span>
-						</section>
-						<section>
-							<h2>¿Qué debe contener una Carta Poder Simple?</h2>
-							<p>1. Datos del otorgante</p>
-							<ul>
-								<li>Nombre completo</li>
-								<li>DNI</li>
-								<li>Domicilio</li>
-							</ul>
-							<p>2. Datos del apoderado (quien va a realizar el trámite):</p>
-							<ul>
-								<li>Nombre completo</li>
-								<li>DNI</li>
-								<li>Domicilio</li>
-							</ul>
-							<p>3. Descripción clara del poder otorgado:</p>
-							<ul>
-								<li>Especificar el trámite o gestiones autorizadas</li>
-								<li>Lugar y entidad donde se hará el trámite</li>
-							</ul>
-							<p>4. Fecha y lugar de emisión</p>
-							<p>5. Firma del otorgante (y del apoderado si se desea)</p>
-							<span class="byline">En algunos casos, la entidad que recibe el trámite puede
-								solicitar:</span>
-							<ul>
-								<li>Copia de DNI de ambos</li>
-								<li>Firma con aclaración</li>
-								<li>Que la carta tenga una certificación de firma (por banco, juzgado de paz, escribano,
-									etc.)</li>
-							</ul>
-						</section>
-						<section>
-							<h3> ¿Hay un formato oficial?</h3>
-							<p>No. Al ser un documento privado, no existe un modelo único u oficial. Sin embargo, debe
-								ser
-								claro,
-								preciso y contener todos los datos necesarios.
-							</p>
-							<span class="byline">Las cartas manuscritas o impresas son válidas si están completas y
-								firmadas.</span>
-						</section>
-						<section>
-							<h3>Recomendaciones importantes</h3>
-							<ul>
-								<li>Siempre indicar exactamente qué trámite se autoriza.</li>
-								<li>Usar un lenguaje formal y claro.</li>
-								<li>En lo posible, acompañar con fotocopias de DNI.</li>
-								<li>Verificar si la entidad receptora tiene requisitos específicos (algunos organismos
-									tienen
-									formularios propios o exigen certificación de firma).</li>
-							</ul>
-						</section>
-						<section>
-							<h3>Modelo descargable</h3>
-							<p>Podés descargar un modelo editable de Carta Poder Simple para completarlo con tus datos:
-							</p>
-							<a href="documentos-pdf/Modelo_Carta_Poder_Simple.pdf" download class="boton-descarga">
-								Descargar Modelo en PDF
-							</a>
-						</section>
-					</div>
-
-					<div id="certificado-convivencia" class="tramites oculto">
-						<section>
-							<h1>Certificado de Convivencia</h1>
-						</section>
-						<section>
-							<h3>¿Qué es el Certificado de Convivencia?</h3>
-							<p>El Certificado de Convivencia es un documento que acredita que dos personas viven juntas
-								bajo
-								el mismo techo, ya sea como pareja (unión de hecho) o como convivientes (familiares,
-								amigos,
-								etc.).<br />
-								Se utiliza para fines legales, administrativos, previsionales o sanitarios.
-							</p>
-						</section>
-						<section>
-							<h2>¿Para qué sirve?</h2>
-							<p>Es requerido comúnmente para:</p>
-							<ul>
-								<li>Afiliaciones a obras sociales o prepagas</li>
-								<li>Cobertura médica familiar</li>
-								<li>Trámites de ANSES (Asignaciones, AUH, pensiones, etc.)</li>
-								<li>Certificados de residencia o escolaridad</li>
-								<li>Uniones convivenciales (cuando se necesita demostrar convivencia previa)</li>
-								<li>Trámites migratorios</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Dónde se tramita?</h2>
-							<p>Se puede gestionar de dos formas, según el caso:</p>
-							<h3>1. Ante el Registro Civil o Juzgado de Paz</h3>
-							<p>Ideal para certificar parejas en unión convivencial (relación afectiva). En este caso,
-								algunas provincias lo gestionan como un "Acta de Convivencia" o incluso como paso previo
-								a
-								la unión convivencial.</p>
-							<h3>2. Ante una Comisaría o Centro Municipal / Comunal</h3>
-							<p>Para situaciones más simples o urgentes, se puede solicitar un Certificado de Convivencia
-								policial, que tiene validez para trámites menores (obras sociales, becas, etc.). En
-								general:
-							</p>
-							<ul>
-								<li>Lo otorgan con testigos</li>
-								<li>Tiene una validez limitada (ej: 30 o 90 días)</li>
-								<li>Es gratuito o con costo mínimo</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Requisitos generales</h2>
-							<p>Los requisitos pueden variar según la provincia o municipio, pero en general se solicita:
-							</p>
-							<h3>Documentación personal:</h3>
-							<p>DNI original y copia de ambas personas</p>
-							<p>Comprobante de domicilio (boleta de servicio o contrato de alquiler a nombre de alguno de
-								los
-								dos)</p>
-							<h3>Testigos:</h3>
-							<p>En algunos casos, se requiere la presencia de dos testigos (vecinos, familiares) con DNI
-							</p>
-							<p>Deben declarar que los convivientes efectivamente comparten domicilio</p>
-							<h3>Tiempo mínimo de convivencia:</h3>
-							<p>Algunas entidades exigen mínimo 2 años de convivencia si el certificado será usado para
-								trámites legales más formales (como previsionales)</p>
-						</section>
-						<section>
-							<h2>Consideraciones legales</h2>
-							<ul>
-								<li>No es lo mismo que una Unión Convivencial registrada ante el Registro Civil, aunque
-									puede ser un paso previo para iniciarla.</li>
-								<li>Tiene valor declarativo, no constitutivo. Es decir, acredita una situación de hecho.
-								</li>
-								<li>Puede ser usado como prueba complementaria ante ANSES, obras sociales, juzgados,
-									etc.
-								</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Modelo orientativo del contenido</h2>
-							<p>Un certificado de convivencia suele incluir:</p>
-							<span class="byline">"Se deja constancia que las personas [NOMBRE 1], DNI [] y [NOMBRE 2],
-								DNI
-								[], manifiestan convivir en el domicilio sito en [DIRECCIÓN COMPLETA], desde hace
-								aproximadamente [TIEMPO] meses/años, constituyendo un grupo conviviente. Dicha
-								información
-								ha sido corroborada por testigos presentes."</span>
-						</section>
-					</div>
-
-					<div id="inicio-sucesion" class="tramites oculto">
-						<section>
-							<h1>Inicio de Sucesión</h1>
-						</section>
-						<section>
-							<h3>¿Qué es una Sucesión?</h3>
-							<p>La sucesión es el proceso judicial mediante el cual se transfiere el patrimonio (bienes,
-								derechos y deudas) de una persona fallecida a sus herederos legales o testamentarios.
-								El inicio de sucesión es el primer paso legal para gestionar esa herencia.s.
-							</p>
-						</section>
-						<section>
-							<h2>¿Cuándo es necesario iniciar una sucesión?</h2>
-							<p>Se debe iniciar una sucesión cuando:</p>
-							<ul>
-								<li>La persona fallecida tenía bienes registrables: inmuebles, autos, cuentas bancarias,
-									etc.</li>
-								<li>Los herederos quieren vender, transferir, alquilar o disponer legalmente de esos
-									bienes.
-								</li>
-								<li>Se necesitan acreditar derechos ante organismos públicos o privados (ej: bancos,
-									AFIP,
-									Registro de la Propiedad).</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Quiénes pueden iniciar el trámite?</h2>
-							<p>Cualquier heredero/a puede iniciar la sucesión. Los herederos pueden ser:</p>
-							<ul>
-								<li>Hijos/as</li>
-								<li>Cónyuge supérstite (viudo/a)</li>
-								<li>Padres</li>
-								<li>Nietos (si los hijos fallecieron)</li>
-								<li>Hermanos u otros parientes colaterales (si no hay descendencia directa)</li>
-							</ul>
-							<span class="byline">También puede hacerlo el albacea o un acreedor, si hay intereses
-								comprometidos.</span>
-						</section>
-						<section>
-							<h2> Tipos de sucesión</h2>
-							<h3>1. Sucesión ab intestato</h3>
-							<p>Cuando no hay testamento. Se aplica el orden legal de herederos establecido por el Código
-								Civil y Comercial.</p>
-							<h3>2. Sucesión testamentaria</h3>
-							<p>Cuando hay testamento válido. Se ejecuta la voluntad del fallecido según lo establecido
-								en el
-								testamento.</p>
-						</section>
-						<section>
-							<h2>Documentación necesaria para iniciar una sucesión</h2>
-							<p>El abogado o abogada que la tramite solicitará:</p>
-							<ul>
-								<li>Partida de defunción del causante</li>
-								<li>Partida de nacimiento, matrimonio o prueba de vínculo de los herederos</li>
-								<li>Testamento (si existiera)</li>
-								<li>Título de propiedad de los bienes (inmuebles, automotores, etc.)</li>
-								<li>CUIL/CUIT del causante y herederos</li>
-								<li>Declaración jurada de bienes (si corresponde)</li>
-								<li>DNI de los herederos</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Dónde se inicia el trámite?</h2>
-							<p>La sucesión se inicia ante el juzgado civil correspondiente al último domicilio del
-								fallecido.<br />
-								El trámite siempre se realiza con patrocinio letrado obligatorio (abogado/a).</p>
-						</section>
-						<section>
-							<h2>¿Cómo es el proceso?</h2>
-							<p>Etapas comunes:</p>
-							<ul>
-								<li>1- Presentación de la demanda por parte del abogado/a.</li>
-								<li>2- Declaratoria de herederos (si no hay testamento) o validez del testamento.</li>
-								<li>3- Informes registrales (para verificar bienes a nombre del fallecido).</li>
-								<li>4- Partición de bienes (si hay más de un heredero).</li>
-								<li>5- Inscripción en registros públicos (ej: Registro de la Propiedad, automotor,
-									etc.).
-								</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Cuánto tarda?</h2>
-							<p>Depende de cada juzgado y del tipo de bienes. En promedio:</p>
-							<ul>
-								<li>Sucesiones simples: 4 a 9 meses</li>
-								<li>Sucesiones complejas o con conflictos: 1 año o más</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Cuánto cuesta?</h2>
-							<p>Costos aproximados:</p>
-							<ul>
-								<li>Honorarios de abogado/a: suelen ser un porcentaje del valor del patrimonio
-									hereditario
-									(5% al 15%).</li>
-								<li>Tasa de justicia: 1,5% del valor de los bienes (al presentar la demanda).</li>
-								<li>Gastos administrativos: informes registrales, certificados, publicaciones, etc.</li>
-							</ul>
-							<span class="byline">Se puede pactar con el profesional el pago con bienes heredados o en
-								cuotas.</span>
-						</section>
-					</div>
-
-					<div id="extravio-dni" class="tramites oculto">
-						<section>
-							<h1>Denuncia por Extravío del DNI</h1>
-						</section>
-						<section>
-							<p>Perder el DNI puede generarte muchas preocupaciones, pero hacer la denuncia por extravío
-								es un paso rápido y necesario para evitar usos indebidos y poder gestionar un nuevo
-								documento. Te explicamos todo lo que necesitás saber.
-							</p>
-						</section>
-						<section>
-							<h2>¿Qué es una denuncia por extravío?</h2>
-							<p>Es una declaración oficial que se realiza cuando una persona pierde su DNI y necesita
-								dejar constancia de la pérdida. Sirve para:</p>
-							<ul>
-								<li>Proteger tu identidad en caso de que alguien use el DNI perdido de forma
-									fraudulenta.</li>
-								<li>Iniciar el trámite para solicitar un nuevo ejemplar.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Dónde se hace la denuncia?</h2>
-							<p>Podés hacer la denuncia en cualquiera de los siguientes lugares:</p>
-							<h3>1. Comisaría</h3>
-							<ul>
-								<li>Acercate a la comisaría más cercana y explicá que perdiste tu DNI.</li>
-								<li>Te tomarán una declaración y te darán una constancia de extravío.</li>
-							</ul>
-							<h3>2. Online (en algunas provincias)</h3>
-							<ul>
-								<li>Algunas provincias permiten hacer la denuncia a través de sus portales web oficiales
-									o apps.</li>
-								<li>Consultá el sitio web del Ministerio de Seguridad o Policía de tu provincia.</li>
-							</ul>
-							<h3>3. Registro Civil (al iniciar el trámite de nuevo DNI)</h3>
-							<p>No siempre es obligatorio presentar la denuncia policial. Si solo querés reimprimir el
-								DNI, muchas veces basta con acudir directamente al Registro Civil o hacer el trámite
-								online (ver más abajo).</p>
-						</section>
-						<section>
-							<h2>¿Qué necesito para hacer la denuncia?</h2>
-							<ul>
-								<li>Tu número de DNI (si lo recordás).</li>
-								<li>Datos personales: nombre completo, domicilio, fecha y lugar de nacimiento.</li>
-								<li>Lugar y fecha aproximada en que ocurrió la pérdida.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Cómo tramitar un nuevo DNI tras la pérdida?</h2>
-							<p>Una vez hecha la denuncia, podés solicitar un nuevo ejemplar de tu DNI. Se puede hacer:
-							</p>
-							<h3>Online (Reimpresión)</h3>
-							<ul>
-								<li>Desde Mi Argentina o RENAPER.</li>
-								<li>Solo si tenés una cuenta y datos validados.</li>
-							</ul>
-							<h3>Presencial</h3>
-							<ul>
-								<li>En el Registro Civil, Centros de Documentación o unidades del RENAPER.</li>
-								<li>Se te tomará una foto, firma y huellas digitales.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Tiene costo?</h2>
-							<p>Sí, la reimpresión del DNI tiene un costo aproximado de $3000 a $4000 (pesos argentinos),
-								dependiendo del trámite y la modalidad (express, común o urgente).</p>
-						</section>
-						<section>
-							<h2>¿Cuánto tarda?</h2>
-							<ul>
-								<li>Trámite común: entre 10 y 15 días hábiles.</li>
-								<li>Trámite exprés: 24 a 96 horas (tiene un costo adicional).</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Qué hacer si alguien encuentra tu DNI?</h2>
-							<p>Podés avisar a la comisaría o devolverlo al Registro Civil más cercano. También podés
-								intentar ubicar al titular si aparece en redes sociales o grupos locales.</p>
-						</section>
-					</div>
-
-					<div id="cambio-domicilio" class="tramites oculto">
-						<section>
-							<h1>Cambio de Domicilio</h1>
-						</section>
-						<section>
-							<h2>¿Por qué es importante actualizar el domicilio?</h2>
-							<p>Actualizar tu domicilio en el DNI es esencial para:</p>
-							<ul>
-								<li>Mantener tus datos personales actualizados.</li>
-								<li>Asegurar tu correcta inclusión en el padrón electoral.</li>
-								<li>Evitar inconvenientes en trámites oficiales.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>¿Cómo realizar el trámite?</h2>
-							<h3>1. Presencial en Argentina</h3>
-							<ul>
-								<li>¿Dónde? En el Registro Civil correspondiente a tu nuevo domicilio o en un Centro de
-									Documentación del RENAPER.</li>
-								<li>Requisitos: <br />
-									DNI vigente. <br />
-									Si sos menor de 14 años, partida de nacimiento original y acompañamiento de padre,
-									madre o tutor con DNI.</li>
-								<li>Costo: $7.500 (trámite regular).</li>
-								<li>Duración del trámite: Aproximadamente 15 minutos.</li>
-								<li>Entrega del nuevo DNI: <br />
-									- Trámite regular: entre 10 y 15 días hábiles. <br />
-									- Trámite exprés: entre 48 y 96 horas hábiles, con un costo de $18.500. </li>
-							</ul>
-							<h3>2. En la Ciudad Autónoma de Buenos Aires (CABA)</h3>
-							<ul>
-								<li>Requisitos adicionales: <br />
-									Tener usuario y clave miBA nivel 2 o 3.</li>
-								<li>Procedimiento: <br />
-									- Reservar turno a través de la plataforma miBA. <br />
-									- Presentarse en la oficina correspondiente con la documentación requerida.</li>
-							</ul>
-							<h3>3. Para Argentinos en el Exterio</h3>
-							<ul>
-								<li>¿Dónde? En el Consulado Argentino correspondiente a tu lugar de residencia.</li>
-								<li>Requisitos: <br />
-									- DNI vigente. <br />
-									- En algunos casos, dos fotos carnet 4x4 con fondo blanco.</li>
-								<li>Costo: 15 Unidades Consulares (el valor puede variar según el consulado).</li>
-								<li>Procedimiento: <br />
-									- Solicitar turno en el consulado. <br />
-									- Presentarse con la documentación requerida. <br />
-									- El nuevo DNI se retira en el consulado una vez emitido.</li>
-							</ul>
-						</section>
-						<section>
-							<h3>Información adicional</h3>
-							<ul>
-								<li>Vigencia del nuevo DNI: 15 años para mayores de 14 años.</li>
-								<li>Seguimiento del trámite: Podés realizar el seguimiento online con tu ID de trámite.
-								</li>
-								<li>Entrega del DNI: El nuevo DNI se entrega en el domicilio declarado o se retira en la
-									oficina donde se realizó el trámite, según corresponda.</li>
-							</ul>
-						</section>
-						<section class="enlaces-utiles">
-							<h2>Enlaces útiles para cambio de domicilio en el DNI</h2>
-							<ul>
-								<li>
-									<a href="https://www.argentina.gob.ar/servicio/tramitar-un-nuevo-ejemplar-de-dni"
-										target="_blank" rel="noopener">
-										Trámite de nuevo ejemplar de DNI - Argentina.gob.ar
-									</a>
-								</li>
-								<li>
-									<a href="https://buenosaires.gob.ar/tramites/dni-cambio-de-domicilio"
-										target="_blank" rel="noopener">
-										Cambio de domicilio en DNI - Gobierno de la Ciudad
-									</a>
-								</li>
-								<li>
-									<a href="https://www.argentina.gob.ar/tramitar-cambio-de-domicilio-en-el-dni-para-argentinos-en-el-exterior"
-										target="_blank" rel="noopener">
-										Cambio de domicilio en el exterior - Argentina.gob.ar
-									</a>
-								</li>
-							</ul>
-						</section>
-					</div>
-
-					<div id="viaje-menores" class="tramites oculto">
-						<section>
-							<h1>Autorización para Viajar con Menores</h1>
-						</section>
-						<section>
-							<h2>¿Quiénes necesitan autorización para viajar?</h2>
-							<p>En Argentina, los menores de 18 años requieren autorización para salir del país en las
-								siguientes situaciones:</p>
-							<ul>
-								<li>Viajan solos.</li>
-								<li>Viajan acompañados por un solo progenitor.</li>
-								<li>Viajan con terceros (familiares o no).</li>
-							</ul>
-							<span>Excepciones: Si el menor viaja con ambos progenitores y se presenta documentación que
-								acredite el vínculo (como partida de nacimiento o libreta de familia), no es necesaria
-								una autorización adicional.</span>
-						</section>
-						<section>
-							<h2>Tipos de autorización</h2>
-							<h3>1. Autorización digital (nueva modalidad 2025):</h3>
-							<ul>
-								<li>Trámite presencial en sedes del RENAPER.</li>
-								<li>Válida hasta que el menor cumpla 18 años o hasta el vencimiento del pasaporte, lo
-									que ocurra primero.</li>
-								<li>Permite al menor viajar solo a cualquier país.</li>
-								<li>El proceso incluye verificación biométrica y registro digital, con notificación
-									automática a Migraciones.</li>
-								<li>Puede ser revocada en cualquier momento por cualquiera de los progenitores.</li>
-							</ul>
-							<h3>2. Autorización tradicional:</h3>
-							<ul>
-								<li>Otorgada ante escribano público, juez competente o cónsul argentino en el exterior.
-								</li>
-								<li>Puede ser por única vez, por un período determinado o hasta la mayoría de edad.</li>
-								<li>Requiere legalización o apostilla, según corresponda.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Documentación requerida</h2>
-							<h3>Para el menor:</h3>
-							<ul>
-								<li>DNI o pasaporte vigente.</li>
-								<li>Partida de nacimiento o libreta de familia que acredite el vínculo con los
-									progenitores.</li>
-							</ul>
-							<h3>Para los progenitores o tutores:</h3>
-							<ul>
-								<li>DNI vigente.</li>
-								<li>En caso de tutores, resolución judicial que acredite la tutela.</li>
-							</ul>
-							<h3>Si uno de los progenitores ha fallecido:</h3>
-							<ul>
-								<li>Certificado de defunción correspondiente.</li>
-							</ul>
-							<h3>Si el menor viaja con un tercero:</h3>
-							<ul>
-								<li>DNI del acompañante.</li>
-								<li>Autorización firmada por ambos progenitores o tutores.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Costos y tiempos de tramitación</h2>
-							<ul>
-								<li>Trámite normal: $10.000 – entrega en 10 días hábiles.</li>
-								<li>Trámite exprés: $20.000 – entrega en 48 horas hábiles.</li>
-								<li>Trámite al instante: $30.000 – entrega en 2 horas.</li>
-							</ul>
-							<span>Estos trámites pueden realizarse sin turno en la Sede Central de Migraciones,
-								delegaciones en todo el país y pasos fronterizos.</span>
-						</section>
-						<section>
-							<h2>¿Dónde realizar el trámite?</h2>
-							<h3>En Argentina:</h3>
-							<ul>
-								<li>Sedes del RENAPER.</li>
-								<li>Delegaciones de la Dirección Nacional de Migraciones.</li>
-								<li>Escribanos públicos.</li>
-								<li>Juzgados competentes.</li>
-							</ul>
-							<h3>En el exterior:</h3>
-							<ul>
-								<li>Consulados argentinos.</li>
-								<li>Notarios públicos (con apostilla o legalización correspondiente).</li>
-							</ul>
-						</section>
-						<section class="enlaces-utiles">
-							<h2>Enlaces útiles:</h2>
-							<ul>
-								<li>
-									<a href="https://www.argentina.gob.ar/servicio/autorizacion-de-viaje-para-menores-de-edad"
-										target="_blank" rel="noopener">
-										Autorización de viaje para menores de edad
-									</a>
-								</li>
-								<li>
-									<a href="https://www.argentina.gob.ar/interior/migraciones/autorizacion-de-salida-del-pais-de-ninos-ninas-y-adolescentes/tipos-de"
-										target="_blank" rel="noopener">
-										Tipos de autorización de salida - Migraciones
-									</a>
-								</li>
-								<li>
-									<a href="https://buenosaires.gob.ar/tramites/autorizacion-de-viaje-al-exterior-para-menores-de-18-anos"
-										target="_blank" rel="noopener">
-										Autorización de viaje al exterior para menores de 18 años - Buenos Aires Ciudad
-									</a>
-								</li>
-							</ul>
-						</section>
-					</div>
-
-					<div id="divorcio" class="tramites oculto">
-						<section>
-							<h1>Divorcio por Mutuo Acuerdo en Argentina</h1>
-						</section>
-						<section>
-							<h2>¿Qué es el divorcio por mutuo acuerdo?</h2>
-							<p>Es un proceso legal mediante el cual ambos cónyuges deciden, de común acuerdo, disolver
-								su matrimonio. Desde la reforma del Código Civil y Comercial en 2015, no es necesario
-								alegar una causa específica ni cumplir plazos mínimos de matrimonio para solicitar el
-								divorcio.</p>
-						</section>
-						<section>
-							<h2>Requisitos para iniciar el trámite</h2>
-							<p>Para solicitar el divorcio por mutuo acuerdo, ambos cónyuges deben presentar ante el juez
-								una propuesta reguladora que contemple:</p>
-							<ul>
-								<li>Distribución de bienes: cómo se dividirán los bienes adquiridos durante el
-									matrimonio.</li>
-								<li>Vivienda familiar: quién residirá en el domicilio conyugal.</li>
-								<li>Compensaciones económicas: si corresponde, para equilibrar desequilibrios
-									financieros entre las partes.</li>
-								<li>Cuidado de los hijos menores: régimen de convivencia, alimentos y educación.</li>
-							</ul>
-							<span>La omisión de esta propuesta impide dar trámite a la petición de divorcio.</span>
-						</section>
-						<section>
-							<h2>Documentación necesaria</h2>
-							<ul>
-								<li>DNI de ambos cónyuges.</li>
-								<li>Acta o partida de matrimonio.</li>
-								<li>Partidas de nacimiento de los hijos menores, si los hay.</li>
-								<li>Propuesta reguladora firmada por ambos.</li>
-								<li>Documentación que respalde los acuerdos (escrituras, contratos, etc.).</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Procedimiento judicial</h2>
-							<p>1- Presentación de la demanda: ambos cónyuges presentan la solicitud de divorcio con la
-								propuesta reguladora ante el juzgado competente.</p>
-							<p>2- Revisión judicial: el juez evalúa la propuesta y puede solicitar modificaciones si
-								considera que no protege adecuadamente los derechos de alguna de las partes o de los
-								hijos menores.</p>
-							<p>3- Audiencia: en algunos casos, se convoca a una audiencia para aclarar aspectos de la
-								propuesta.</p>
-							<p>4- Sentencia: si todo está en orden, el juez dicta la sentencia de divorcio.</p>
-							<span>Estos trámites pueden realizarse sin turno en la Sede Central de Migraciones,
-								delegaciones en todo el país y pasos fronterizos.</span>
-						</section>
-						<section>
-							<h2>Plazos y costos</h2>
-							<ul>
-								<li>Duración del trámite: varía según la carga del juzgado, pero generalmente se
-									resuelve en un plazo de 1 a 3 meses.</li>
-								<li>Costos: pueden incluir honorarios de abogados, tasas judiciales y gastos
-									administrativos. Es recomendable consultar con un profesional para obtener un
-									presupuesto detallado.</li>
-							</ul>
-						</section>
-						<section>
-							<h2>Consideraciones sobre los hijos menores</h2>
-							<p>El juez priorizará el interés superior del niño al evaluar los acuerdos sobre:</p>
-							<ul>
-								<li>Responsabilidad parental: ambos padres la mantienen, salvo decisión judicial en
-									contrario.</li>
-								<li>Régimen de cuidado: puede ser compartido o unilateral, según lo acordado.</li>
-								<li>Régimen de comunicación: establece cómo será la relación del niño con el progenitor
-									no conviviente.</li>
-								<li>Alimentos: se determina la contribución económica de cada progenitor para el
-									sustento del menor.</li>
-							</ul>
-						</section>
-						<section class="enlaces-utiles">
-							<h2>Enlaces útiles:</h2>
-							<ul>
-								<li>
-									<a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/divorcio"
-										target="_blank" rel="noopener">
-										Divorcio - Ley Simple
-									</a>
-								</li>
-								<li>
-									<a href="https://www.argentina.gob.ar/justicia/derechofacil/aplicalaley/nos-divorciamos"
-										target="_blank" rel="noopener">
-										Nos divorciamos - Justicia Cerca
-									</a>
-								</li>
-								<li>
-									<a href="https://www.argentina.gob.ar/normativa/nacional/ley-26994-235975/actualizacion"
-										target="_blank" rel="noopener">
-										Código Civil y Comercial de la Nación
-									</a>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-
-
-
-
-
-				<div id="copyright">
-					<div class="container">
-						Site made with: <a href="https://templated.co/">Templated.co</a> Distributed by <a
-							href="https://themewagon.com" target="_blank">ThemeWagon</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-</body>
-
+                    <div id="copyright">
+                        <div class="container">
+                            Site made with:
+                            <a href="https://templated.co/">Templated.co</a>
+                            Distributed by
+                            <a href="https://themewagon.com" target="_blank"
+                                >ThemeWagon</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

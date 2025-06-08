@@ -1,373 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Legal Útiles</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <link
-      href="//fonts.googleapis.com/css?family=Arimo:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/init.js"></script>
-    <noscript>
-      <link rel="stylesheet" href="css/skel-noscript.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-desktop.css" />
-    </noscript>
-    <script src="js/script.js"></script>
-  </head>
+    <head>
+        <title>Legal Útiles</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link
+            href="//fonts.googleapis.com/css?family=Arimo:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+    </head>
 
-  <body class="no-sidebar">
-    <div id="header">
-      <div class="container">
-        <div id="logo">
-          <h1><a href="#">Sección Útiles</a></h1>
-          <span>Por Legal Solutions</span>
+    <body class="no-sidebar">
+        <div id="header">
+            <div class="container">
+                <div id="logo">
+                    <h1><a href="#">Sección Útiles</a></h1>
+                    <span>Por Legal Solutions</span>
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/">Principal</a></li>
+                        <li><a href="left-sidebar.html">Trámites</a></li>
+                        <li>
+                            <a href="accidentes-laborales.html"
+                                >Accidentes Laborales</a
+                            >
+                        </li>
+                        <li><a href="right-sidebar.html">Leyes</a></li>
+                        <li><a href="no-sidebar.html">Útiles</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <nav id="nav">
-          <ul>
-            <li><a href="/">Principal</a></li>
-            <li><a href="left-sidebar.html">Trámites</a></li>
-            <li><a href="right-sidebar.html">Leyes</a></li>
-            <li><a href="no-sidebar.html">Útiles</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div id="content" class="utiles">
+                        <section>
+                            <header>
+                                <h2>
+                                    Números, links y domicilios útiles para cada
+                                    trámite.
+                                </h2>
+                            </header>
+                        </section>
 
-    <div id="main">
-      <div class="container">
-        <div class="row">
-          <div id="content" class="utiles">
-            <section>
-              <header>
-                <h2>Números, links y domicilios útiles para cada trámite.</h2>
-              </header>
-            </section>
-            <section>
-              <h3>DNI</h3>
-              <ul>
-                <li><strong>Organismo:</strong> RENAPER</li>
-                <li><strong>Teléfono:</strong> 0800-999-9364</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.argentina.gob.ar/renaper"
-                    >https://www.argentina.gob.ar/renaper</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> San Luis 2950</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=San+Luis+2950,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
+                        <section class="destacados-utiles">
+                            <h3>Buscar por ubicación y tipo de trámite</h3>
+                            <p>
+                                Para obtener resultados personalizados,
+                                seleccione la ubicación y el tipo de trámite en
+                                el futuro buscador.
+                            </p>
+                            <p>
+                                <strong>Ubicación trámite:</strong>
+                                <select
+                                    onchange="filtrarUbicacion(this.value)"
+                                    class="select-filtro"
+                                >
+                                    <option>Rosario</option>
+                                    <option>Buenos Aires</option>
+                                    <option>Santa Fe</option>
+                                </select>
+                            </p>
+                            <p>
+                                <strong>Tipo de trámite:</strong>
+                                <select
+                                    onchange="filtrarTipo(this.value)"
+                                    class="select-filtro"
+                                >
+                                    <option>DNI</option>
+                                    <option>
+                                        Certificado de antecedentes penales
+                                    </option>
+                                    <option>Pasaporte</option>
+                                    <option>Clave Fiscal AFIP</option>
+                                    <option>Inscripción de monotributo</option>
+                                    <option>
+                                        Certificado Único de Discapacidad (CUD)
+                                    </option>
+                                    <option>Licencia de conducir</option>
+                                    <option>
+                                        Turno judicial (Consulta de causas)
+                                    </option>
+                                    <option>Partida de nacimiento</option>
+                                </select>
+                            </p>
+                        </section>
 
-            <section>
-              <h3>Certificado de antecedentes penales</h3>
-              <ul>
-                <li>
-                  <strong>Organismo:</strong> Registro Nacional de Reincidencia
-                </li>
-                <li><strong>Teléfono:</strong> 0800-666-0055</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.argentina.gob.ar/justicia/reincidencia"
-                    >https://www.argentina.gob.ar/justicia/reincidencia</a
-                  >
-                </li>
-                <li>
-                  <strong>Dirección en Rosario:</strong> Mitre 150, Planta Baja
-                </li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Mitre+150,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Partida de nacimiento</h3>
-              <ul>
-                <li><strong>Organismo:</strong> Registro Civil</li>
-                <li><strong>Teléfono:</strong> (0341) 480-2444</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a
-                    href="https://www.santafe.gob.ar/index.php/web/content/view/full/190228"
-                    >https://www.santafe.gob.ar</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Salta 2752</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Salta+2752,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Pasaporte</h3>
-              <ul>
-                <li><strong>Organismo:</strong> RENAPER</li>
-                <li><strong>Teléfono:</strong> 0800-999-9364</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.argentina.gob.ar/interior/pasaporte"
-                    >https://www.argentina.gob.ar/interior/pasaporte</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> San Luis 2950</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=San+Luis+2950,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Clave Fiscal AFIP</h3>
-              <ul>
-                <li><strong>Organismo:</strong> AFIP</li>
-                <li><strong>Teléfono:</strong> 0800-999-2347</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.afip.gob.ar/clavefiscal/"
-                    >https://www.afip.gob.ar/clavefiscal/</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Córdoba 1452</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Córdoba+1452,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Inscripción de monotributo</h3>
-              <ul>
-                <li><strong>Organismo:</strong> AFIP</li>
-                <li><strong>Teléfono:</strong> 0800-999-2347</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.afip.gob.ar/monotributo/"
-                    >https://www.afip.gob.ar/monotributo/</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Córdoba 1452</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Córdoba+1452,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Certificado Único de Discapacidad (CUD)</h3>
-              <ul>
-                <li>
-                  <strong>Organismo:</strong> Agencia Nacional de Discapacidad
-                </li>
-                <li><strong>Teléfono:</strong> 0800-555-3472</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.argentina.gob.ar/andis/cud"
-                    >https://www.argentina.gob.ar/andis/cud</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Moreno 960</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Moreno+960,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Licencia de conducir</h3>
-              <ul>
-                <li>
-                  <strong>Organismo:</strong> Dirección General de Tránsito
-                </li>
-                <li><strong>Teléfono:</strong> (0341) 480-2400</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.rosario.gob.ar/web/licencia-de-conducir"
-                    >https://www.rosario.gob.ar/web/licencia-de-conducir</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Montevideo 2852</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a
-                    href="https://www.google.com/maps?q=Montevideo+2852,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Turno judicial (Consulta de causas)</h3>
-              <ul>
-                <li><strong>Organismo:</strong> Poder Judicial de Santa Fe</li>
-                <li><strong>Teléfono:</strong> (0341) 472-1700</li>
-                <li>
-                  <strong>Web:</strong>
-                  <a href="https://www.justiciasantafe.gov.ar"
-                    >https://www.justiciasantafe.gov.ar</a
-                  >
-                </li>
-                <li><strong>Dirección en Rosario:</strong> Balcarce 1651</li>
-                <li>
-                  <strong>Ubicación:</strong>
-                  <a href="https://www.google.com/maps?q=Balcarce+1651,+Rosario"
-                    >Ver en mapa</a
-                  >
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h3>Buscar por ubicación y tipo de trámite</h3>
-              <p><strong>Ubicación:</strong> Rosario</p>
-              <p>
-                <strong>Tipo de trámite:</strong> DNI, Certificado de
-                antecedentes penales
-              </p>
-              <p>
-                Para obtener resultados personalizados, seleccione la ubicación
-                y el tipo de trámite en el futuro buscador.
-              </p>
-            </section>
-          </div>
+                        <div id="contenido-dinamico"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="featured">
-      <div class="container">
-        <div class="row">
-          <div class="4u">
-            <h2>Aenean elementum facilisis</h2>
-            <a href="#" class="image full"
-              ><img src="images/pic01.jpg" alt="" width="314" height="144"
-            /></a>
-            <p>
-              Nullam non wisi a sem semper eleifend. Donec mattis libero eget
-              urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus
-              at urna congue rutrum. Quisque dictum. Pellentesque viverra
-              vulputate enim.
-            </p>
-            <p><a href="#" class="button">More Details</a></p>
-          </div>
-          <div class="4u">
-            <h2>Fusce ultrices fringilla</h2>
-            <a href="#" class="image full"
-              ><img src="images/pic02.jpg" alt="" width="314" height="144"
-            /></a>
-            <p>
-              Nullam non wisi a sem semper eleifend. Donec mattis libero eget
-              urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus
-              at urna congue rutrum. Quisque dictum. Pellentesque viverra
-              vulputate enim.
-            </p>
-            <p><a href="#" class="button">More Details</a></p>
-          </div>
-          <div class="4u">
-            <h2>Etiam rhoncus volutpat erat</h2>
-            <a href="#" class="image full"
-              ><img src="images/pic03.jpg" alt="" width="314" height="144"
-            /></a>
-            <p>
-              Nullam non wisi a sem semper eleifend. Donec mattis libero eget
-              urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus
-              at urna congue rutrum. Quisque dictum. Pellentesque viverra
-              vulputate enim.
-            </p>
-            <p><a href="#" class="button">More Details</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="4u">
-            <section>
-              <h2>Latest Posts</h2>
-              <ul class="default">
-                <li><a href="#">Pellentesque lectus gravida blandit</a></li>
-                <li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-                <li><a href="#">Phasellus nibh pellentesque congue</a></li>
-                <li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-                <li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="4u">
-            <section>
-              <h2>Ultrices fringilla</h2>
-              <ul class="default">
-                <li><a href="#">Pellentesque lectus gravida blandit</a></li>
-                <li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-                <li><a href="#">Phasellus nibh pellentesque congue</a></li>
-                <li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-                <li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="4u">
-            <section>
-              <h2>Aenean elementum</h2>
-              <ul class="default">
-                <li><a href="#">Pellentesque lectus gravida blandit</a></li>
-                <li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-                <li><a href="#">Phasellus nibh pellentesque congue</a></li>
-                <li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-                <li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div id="copyright">
-      <div class="container">
-        Site made with:
-        <a href="https://templated.co/">Templated.co</a> Distributed by
-        <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
+<script src="js/script.js"></script>
