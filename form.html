@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formularios Legales</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <link
+            href="//fonts.googleapis.com/css?family=Arimo:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <div id="logo">
+                    <h1><a href="#">Formularios Legales</a></h1>
+                    <span>Legal Solutions</span>
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/">Principal</a></li>
+                        <li><a href="left-sidebar.html">Trámites</a></li>
+                        <li>
+                            <a href="accidentes-laborales.html"
+                                >Accidentes Laborales</a
+                            >
+                        </li>
+                        <li><a href="form.html">Formularios</a></li>
+                        <li><a href="right-sidebar.html">Leyes</a></li>
+                        <li><a href="no-sidebar.html">Útiles</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div id="content" class="8u skel-cell-important">
+                        <header>
+                            <h2>Formularios Legales</h2>
+                        </header>
+                        <p>
+                            En esta sección vas a encontrar herramientas
+                            interactivas para ayudarte a comprender mejor tus
+                            derechos y obligaciones legales. Cada formulario
+                            está diseñado para simular situaciones reales, como
+                            un despido, una herencia, un acuerdo de alimentos o
+                            un contrato de alquiler. Completalos con tus datos y
+                            recibí una orientación aproximada sobre tu caso.
+                        </p>
+                        <p class="destacados">
+                            Importante: Esta web tiene un fin informativo y
+                            orientativo. No reemplaza el asesoramiento
+                            profesional de un/a abogado/a, contador/a u otro/a
+                            especialista. Siempre recomendamos consultar con
+                            un/a profesional para resolver casos particulares o
+                            dudas específicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-form">
+            <h1>Simuladores Legales</h1>
+            <h2>Simulador de Indemnización por Despido</h2>
+            <form id="form-despido">
+                <label>Fecha de ingreso:</label>
+                <input type="date" name="ingreso" />
+
+                <label>Fecha de egreso:</label>
+                <input type="date" name="egreso" />
+
+                <label>Último sueldo bruto ($):</label>
+                <input type="number" name="sueldo" min="0" />
+
+                <label>¿Recibiste preaviso?</label>
+                <select name="preaviso">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+
+        <div class="section-form">
+            <h2>Simulador de Licencia por Maternidad</h2>
+            <form id="form-maternidad">
+                <label>Fecha estimada de parto:</label>
+                <input type="date" name="parto" />
+
+                <label>Fecha de inicio de licencia deseada:</label>
+                <input type="date" name="inicio" />
+
+                <button type="submit">Simular</button>
+            </form>
+        </div>
+
+        <div class="section-form">
+            <h2>Simulador de Denuncia por Accidente Laboral</h2>
+            <form id="form-accidente">
+                <label>Fecha del accidente:</label>
+                <input type="date" name="fecha_accidente" />
+
+                <label>Descripción del accidente:</label>
+                <textarea name="descripcion" rows="3"></textarea>
+
+                <label>¿Hubo testigos?</label>
+                <select name="testigos">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Generar modelo de denuncia</button>
+            </form>
+        </div>
+
+        <div class="section-form">
+            <h2>Simulador de Reclamo por Falta de Pago</h2>
+            <form id="form-reclamo">
+                <label>Mes/es adeudado/s:</label>
+                <input
+                    type="text"
+                    name="meses"
+                    placeholder="Ej: marzo, abril"
+                />
+
+                <label>Monto aproximado adeudado ($):</label>
+                <input type="number" name="monto" min="0" />
+
+                <label>¿Hubo algún acuerdo previo?</label>
+                <select name="acuerdo">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Redactar carta modelo</button>
+            </form>
+        </div>
+    </body>
+</html>

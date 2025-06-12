@@ -518,3 +518,135 @@ span {
     color: white;
     font-size: 18px;
 }
+
+#featured-a {
+    padding: 6em 0em;
+    position: relative;
+    background: #f2f2f2;
+    color: #4c4c4c;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#featured-a h2 {
+    display: block;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+#featured-b {
+    padding: 6em 0em;
+    position: relative;
+    background: #f2f2f2;
+    color: #4c4c4c;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#featured-b h2 {
+    display: block;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.selector input[type="text"] {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1;
+    min-width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.selector input[type="text"]:focus {
+    border-color: #c61414;
+    outline: none;
+}
+
+.selector button {
+    padding: 10px 20px;
+    background-color: #c61414;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.selector button:hover {
+    background-color: #c61414;
+}
+
+.section-form {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.section-form h1 {
+    background-color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #db0c0c;
+}
+
+.section-form h2 {
+    color: #34495e;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #c61414;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c61414;
+}

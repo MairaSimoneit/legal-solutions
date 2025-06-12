@@ -368,3 +368,20 @@ function filtrarUbicacion(filtro) {
 function filtrarTipo(filtro) {
     alert(filtro);
 }
+
+function buscarTema() {
+    const texto = document
+        .getElementById("buscador")
+        .value.toLowerCase()
+        .trim();
+    const arraySecciones = document.querySelectorAll(".opciones");
+
+    arraySecciones.forEach((seccion) => {
+        const contenido = seccion.innerText.toLowerCase();
+        if (contenido.includes(texto)) {
+            seccion.style.display = "block";
+        } else {
+            seccion.style.display = "none";
+        }
+    });
+}
